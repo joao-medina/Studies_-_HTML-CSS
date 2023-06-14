@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'po';
+}
+
+:root {
+    --color-light: #ffffff;
+    --color-blue: #6959c5;
+    --transition: .5s;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 1.6rem;
+}
