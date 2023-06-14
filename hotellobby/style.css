@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'po';
+    font-family: 'poppins', sans-serif;
 }
 
 :root {
@@ -17,4 +17,112 @@ html {
 
 body {
     font-size: 1.6rem;
+}
+
+a {
+    color: var(--color-light);
+    font-weight: 900;
+    text-decoration: none;
+    transition: var(--transition)
+}
+
+img {
+    max-width: 100%
+}
+
+.btn {
+    color: var(--color-light);
+    padding: 8px 3.5rem;
+    background-color: var(--color-blue);
+    border: 2px solid var(--color-blue);   
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    color: var(--color-blue);
+    background-color: transparent;
+}
+
+.hero {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.9)), url(imagens/emcasa.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    color: var(--color-light);
+    width: 60%;
+    padding: 5rem;
+}
+
+.hero-content h2 {
+    font-size: 7vmin;
+}
+
+.hero-content p {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 3.6rem;
+}
+
+.hotel-title {
+    color: var(--color-blue);
+    font-size: 5vmin;
+    text-align: center;
+    margin: 4rem 0 2rem;
+}
+
+.hotel-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hotel-item {
+    text-align: center;
+    width: 28%;
+    margin: 3rem 0;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 1px 1px 30px #ccc;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.hotel-imagem {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.hotel-imagem img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.hotel-imagem h2 {
+    margin: 3rem 0;
+    font-weight: 800;
+}
+
+.hotel-imagem {
+    margin: 0 0 3rem;
+
+}
+
+.hotel-item:hover {
+
 }
