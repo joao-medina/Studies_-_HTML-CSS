@@ -31,8 +31,11 @@ a:hover{
 }
 
 .content-main .project{
-    margin: 20px;
+    width: 80%;
+    max-width: 800px;
+
     padding: 20px;
+    margin: 20px auto;
     
     display: flex;
     flex-direction: column;
