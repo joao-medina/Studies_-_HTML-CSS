@@ -78,7 +78,7 @@ body {
 
 .header-nav-list-item :hover {
     border: 1px solid var(--purple);
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .main {
