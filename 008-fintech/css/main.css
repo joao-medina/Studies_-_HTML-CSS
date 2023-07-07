@@ -1,0 +1,572 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor1: #FFFFFF;
+    --cor2: #252C59;
+    --cor3: #6BCCF2;
+    --cor4: #FFD200;
+    --cor5: #F2D272;
+    --cor6: #000000;
+}
+
+/*Header*/
+
+header {
+    background-image: linear-gradient(to right,#000000f7, #252c59a2, #252c5948), url('../image/team/womanandtheteam.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 12px black;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header img {
+    height: 32px;
+    margin-left: 12px;
+}
+
+.header-nav-item {
+    color: var(--cor1) !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    margin-left: 15px;
+
+    border-radius: 12px;
+    border: 2px solid transparent;
+}
+
+.header-nav-item:hover {
+    border-color: #ffffff8d;
+    transition: 1s;
+}
+
+#header-login {
+    background-color: var(--cor1);
+    color: #000000 !important;
+    border-radius: 12px;
+}
+
+#header-login:hover {
+    background-color: #ffffff8d;
+    color: #000000 !important;
+    transition: .5s;
+}
+
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.botton-header {
+    width: 40%;
+    min-width: 400px;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    color: white;
+}
+
+.botton-header h1{
+    color: #657affb8;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.botton-header p{
+    text-align: justify;
+    line-height: 2.5em;
+    max-width: 400px;
+    font-size: 1.2em;
+}
+
+
+/*Main*/
+/*Container 01*/
+.container1 {
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.container1-title {
+    margin-top: 15px;
+    color: var(--cor2);
+    font-weight: bold;
+    padding: 48px 0px;
+}
+
+.container1-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container1-card {
+    margin: 15px;
+    background-color: var(--cor1);
+    width: 350px;
+    height: 520px;
+
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+}
+
+.container1-card:hover{
+    background-color: #f8f8f8fe;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.26);
+    transition: .8s;
+}
+
+.container1-card-subtitle {
+    color: var(--cor2);
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+
+.container1-card-text {
+    text-align: justify;
+    padding: 0px 30px;
+    line-height: 2em;
+    padding-bottom: 50px;
+}
+
+
+/*Container 02*/
+
+.container2 {
+    height: 660px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.266);
+}
+
+.container2-body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 0px;
+}
+
+.container2-body-title {
+    color: var(--cor2);
+    text-align: left;
+    width: 400px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--cor5);
+    margin: 12px;    
+}
+
+.container2-body-text {
+    text-align: justify;
+    font-size: 1.1em;
+    width: 36%;
+    min-width: 300px;
+    line-height: 2em;
+}
+
+.container2-image {
+    width: 50%;
+    background-image: linear-gradient(to right,#0000009c, #252c597e, #252c5948), url('../image/team/teamunited.jpg');
+    background-size: cover;
+    background-position: right center;
+}
+
+@media(max-width: 800px) {
+    .container2-image {
+        width: 0px;
+    }
+    .container2-body {
+        background-image: linear-gradient(to right,#000000e9, #1e2135e4, #252c5984), url('../image/team/teamunited.jpg');
+        background-size: cover;
+        background-position: right center;
+        width: 100%;
+        /*min-width: 300px;*/
+        line-height: 2em;
+    }
+    .container2-body-title {
+        color: var(--cor4);            
+    }
+    
+    .container2-body-text {
+        color: var(--cor1);
+    }
+}
+
+
+/*Container 03*/
+
+.container3 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 30px 60px 30px;
+    min-width: 480px;
+    width: 50%;
+    max-width: 1200px;
+}
+
+.container3-title {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+    padding: 32px 0px;
+}
+.container3-title h1 {
+    width: 300px;
+    color: var(--cor2);
+    font-weight: bold;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--cor4);
+}
+
+.container3 ul{
+    list-style-type: none;
+}
+
+.container3 ul > li{
+    text-align: justify;
+    padding-bottom: 24px;
+    line-height: 2em;
+}
+
+.container3-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Container 04*/
+
+.container4 {
+    height: 660px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.266);
+}
+
+.container4-body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 0px;
+}
+
+.container4-body-title {
+    text-align: left;
+    width: 400px;
+    color: var(--cor2);
+    font-weight: bold;
+    padding-bottom: 12px; 
+    border-bottom: 2px solid var(--cor5);
+    margin-bottom: 12px;   
+}
+
+.container4-body-text {
+    text-align: justify;
+    font-size: 1.1em;
+    width: 36%;
+    min-width: 300px;
+    line-height: 2em;
+}
+
+.container4-image {
+    width: 50%;
+    background-image: linear-gradient(to right,#0000009c, #252c597e, #252c5948), url('../image/team/youngwoman.jpg');
+    background-size: cover;
+    background-position: left center;
+}
+
+@media(max-width: 800px) {
+    .container4-image {
+        width: 0px;
+    }
+    .container4-body {
+        background-image: linear-gradient(to right,#000000e9, #1e2135e4, #252c5984), url('../image/team/youngwoman.jpg');
+        background-size: cover;
+        background-position: left center;
+        width: 100%;
+        line-height: 2em;
+    }
+    .container4-body-title {
+        color: var(--cor4);            
+    }
+    
+    .container4-body-text {
+        color: var(--cor1);
+    }
+}
+
+/*Container 05*/
+
+.container5 {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 12px;
+    width: 80%;
+    max-width: 600px;
+    justify-content: space-around;
+    border-radius: 18px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.266);
+}
+
+.container5-img {
+    width: 200px;
+    height: 200px;
+    background-image: url("../image/people/andrea.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 18px;
+    padding-bottom: 12px;
+}
+
+.container5-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.container5-body-title {
+    border-bottom: 2px solid var(--cor4);
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--cor2);
+
+}
+
+.container5-body-text {    
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+
+/*container 06*/
+
+.container6 {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 12px;
+    width: 80%;
+    max-width: 600px;
+    justify-content: space-around;
+    border-radius: 18px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.266);
+}
+
+.container6-img {
+    width: 200px;
+    height: 200px;
+    background-image: url("../image/people/youngboy.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 18px;
+    padding-bottom: 12px;
+}
+
+.container6-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.container6-body-title {
+    text-align: right;
+    border-bottom: 2px solid var(--cor4);
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--cor2);
+
+}
+
+.container6-body-text {
+    text-align: justify;
+    text-align: right;
+    font-size: 1.1em;
+}
+
+@media(max-width: 670px) {
+    .container6-body-title {
+        text-align: left;    
+    }
+    
+    .container6-body-text {
+        text-align: left;
+    }
+}
+
+/*Container 07*/
+
+.container7 {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 12px;
+    width: 80%;
+    max-width: 600px;
+    justify-content: space-around;
+    border-radius: 18px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.266);
+}
+
+.container7-img {
+    width: 200px;
+    height: 200px;
+    background-image: url("../image/people/hannah.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 18px;
+    padding-bottom: 12px;
+}
+
+.container7-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.container7-body-title {
+    border-bottom: 2px solid var(--cor4);
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--cor2);
+
+}
+
+.container7-body-text {
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.chat {
+    width: 60px;
+    height: 60px;
+
+    background-color: var(--cor3);
+    background-image: url("../image/icon/chat_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.297);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.chat:hover{
+    width: 72px;
+    height: 72px;
+    right: 14px;
+    bottom: 14px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.297);
+}
+
+
+/*Footer*/
+
+footer {
+    color: white;
+    background-color: #0d101f;
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a:hover {
+    color: #b3b3b3b0;
+}
+
+.upfooter {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 46px 0px;
+    border-bottom: 1px solid var(--cor4);
+}
+
+.upfooter-logo-img {
+    width: 220px;
+
+}
+
+.upfooter-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.botfooter {
+    padding-top: 42px;
+}
+
+.botfooter-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands {
+    cursor: pointer;
+    padding: 0px 32px;
+}
